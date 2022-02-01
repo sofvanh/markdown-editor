@@ -1,5 +1,6 @@
 import React from 'react';
 import Preview from './Preview';
+import Input from './Input';
 
 export interface Props {
     // TODO probably add something here
@@ -23,13 +24,8 @@ export default class Editor extends React.Component<Props, State> {
     render() {
         return (
             <div>
-                <textarea
-                    id="markdown-content"
-                    onChange={this.handleChange}
-                    defaultValue={this.state.text}
-                />
-                <h3>Output here:</h3>
-                <Preview text={this.state.text}/>
+                <Input onChange={(e) => this.handleChange(e)} />
+                <Preview text={this.state.text} />
             </div>
         )
     }
