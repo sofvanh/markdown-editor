@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,9 +21,7 @@ function App() {
       </header>
     </div>*/
     <div>
-      <p>Hello world!</p>
-      <textarea/>
-      <p>TODO: Add functionality.</p>
+      Hello world!
     </div>
   );
 }
