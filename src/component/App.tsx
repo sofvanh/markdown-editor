@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Editor from './Editor';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       </header>
     </div>*/
     <div>
-      Hello world!
+      <p>Hello world!</p>
+      <Editor />
     </div>
   );
 }
