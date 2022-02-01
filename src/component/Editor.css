@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+}
+
+.column {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+  }

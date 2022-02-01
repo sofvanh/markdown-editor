@@ -1,6 +1,7 @@
 import React from 'react';
 import Preview from './Preview';
 import Input from './Input';
+import './Editor.css';
 
 export interface Props {
     // TODO probably add something here
@@ -23,9 +24,13 @@ export default class Editor extends React.Component<Props, State> {
 
     render() {
         return (
-            <div>
-                <Input onChange={(e) => this.handleChange(e)} />
-                <Preview text={this.state.text} />
+            <div className='flex-container'>
+                <div className='column'>
+                    <Input onChange={(e) => this.handleChange(e)} />
+                </div>
+                <div className='column'>
+                    <Preview text={this.state.text} />
+                </div>
             </div>
         )
     }
