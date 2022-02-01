@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Remarkable from 'remarkable';
+import './Preview.css';
 
 export interface Props {
     text: string
