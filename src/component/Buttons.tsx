@@ -25,14 +25,14 @@ function Buttons() {
             </div>
             <div className="button">
                 <IconButton
-                    onClick={() => console.log('TODO download as .md')}
+                    onClick={() => alert('TODO download as a markdown file')}
                     aria-label="download as as markdown file">
                     <FileDownload />
                 </IconButton>
             </div>
             <div className="button">
                 <IconButton
-                    onClick={() => console.log('TODO print')}
+                    onClick={() => alert('TODO print')}
                     aria-label="print">
                     <Print />
                 </IconButton>

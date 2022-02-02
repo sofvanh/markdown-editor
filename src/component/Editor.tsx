@@ -15,8 +15,8 @@ interface State {
 export default class Editor extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.handleChange = this.handleChange.bind(this); // This feels cheaty - from reactjs.org example
-        this.state = { text: 'Add your text!' };
+        this.handleChange = this.handleChange.bind(this); // TODO are we sure this is optimal?
+        this.state = { text: 'Markdown renders here!' };
     }
 
     handleChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
@@ -25,14 +25,14 @@ export default class Editor extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className='flex-container'>
-                <div className='column'>
+            <div className="flex-container">
+                <div className="column">
                     <Input onChange={(e) => this.handleChange(e)} />
                 </div>
                 <div className="buttonColumn">
                     <Buttons />
                 </div>
-                <div className='column'>
+                <div className="column">
                     <Preview text={this.state.text} />
                 </div>
             </div>

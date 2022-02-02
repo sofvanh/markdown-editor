@@ -8,7 +8,7 @@ export interface Props {
 function Input({ onChange }: Props) {
     return (
         <div
-            className='input'>
+            className="input">
             <textarea
                 onChange={onChange}
             />
